@@ -30,15 +30,15 @@ function App() {
 
   return (
     <>
- 
-      <div style={{ width: "80%", maxWidth: "1000px", margin: "2em auto 2em auto", fontFamily: "verdana, sans-serif" }}>
-        <Header />    
+
+      <div>
+        <Header />
         <Hero />
         {boardGameArr.map((boardgame, index) => (
           <BoardGames name={boardgame.name} coop={boardgame.coop} rating={boardgame.rating} key={index} />
         ))}
       </div>
-        <Footer />
+      <Footer />
     </>
   )
 }

@@ -1,11 +1,12 @@
 import './Hero.css'
+import heroBanner from '../assets/herobanner.png';
 
 function Hero() {
 
 
     return (
     <>
-        <div className='hero-image'></div>
+        <img className='hero-image' src={heroBanner} alt="Hero banner" />
     </>
 )
 }
