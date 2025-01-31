@@ -9,7 +9,7 @@ function Footer() {
                 color: "#333",
                 fontSize: "14px"
             }}>
-                <p>av Jonas Ståleker <br /> Kontakta mig via e-post: jost2306@student.miun.se</p>
+                <p>by Jonas Ståleker <br /> Contact me by email: jost2306@student.miun.se</p>
             </footer>
         </>
     );

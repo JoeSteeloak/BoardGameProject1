@@ -1,16 +1,19 @@
 function Header() {
     return (
         <h1 style={{ 
-            textAlign: "center", 
-            color: "#333", 
-            fontSize: "36px", 
-            fontWeight: "bold", 
-            textTransform: "uppercase", 
-            letterSpacing: "2px", 
-            padding: "20px", 
-            backgroundColor: "#f8f8f8",
-            borderBottom: "4px solid #333",
-            marginTop: "0"
+            textAlign: "center",
+            fontSize: "42px",
+            fontWeight: "700",
+            fontFamily: "'Poppins', sans-serif",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            padding: "20px",
+            background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+            color: "white",
+            textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
+            borderRadius: "8px",
+            maxWidth: "80%",
+            margin: "20px auto"
         }}>
             My Board Game Collection
         </h1>

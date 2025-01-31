@@ -34,9 +34,21 @@ function App() {
       <div>
         <Header />
         <Hero />
-        {boardGameArr.map((boardgame, index) => (
-          <BoardGames name={boardgame.name} coop={boardgame.coop} rating={boardgame.rating} key={index} />
-        ))}
+        <div style={{
+            marginTop: "100px",
+            marginBottom: "100px"
+          }}>
+          <div style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "20px",
+            justifyContent: "center"
+          }}>
+            {boardGameArr.map((boardgame, index) => (
+              <BoardGames name={boardgame.name} coop={boardgame.coop} rating={boardgame.rating} key={index} />
+            ))}
+          </div>
+        </div>
       </div>
       <Footer />
     </>
