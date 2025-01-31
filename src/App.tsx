@@ -25,6 +25,26 @@ function App() {
       name: "Ahoy",
       coop: false,
       rating: 5
+    },    
+    {
+      name: "7 Wonders",
+      coop: false,
+      rating: 5
+    },
+    {
+      name: "Sentinels of the Multiverse",
+      coop: true,
+      rating: 10
+    },
+    {
+      name: "Root",
+      coop: false,
+      rating: 9
+    },
+    {
+      name: "Keep the Heroes Out",
+      coop: true,
+      rating: 7
     },
   ]
 
