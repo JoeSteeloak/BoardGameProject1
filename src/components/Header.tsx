@@ -1,4 +1,4 @@
-function Header() {
+function Header({ title }: { title: string }) {
     return (
         <h1 style={{ 
             textAlign: "center",
@@ -15,9 +15,10 @@ function Header() {
             maxWidth: "80%",
             margin: "20px auto"
         }}>
-            My Board Game Collection
+            {title}
         </h1>
     );
 }
 
 export default Header;
+

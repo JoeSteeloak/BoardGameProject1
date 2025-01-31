@@ -52,7 +52,7 @@ function App() {
     <>
 
       <div>
-        <Header />
+        <Header title="My Board Game Collection"/>
         <Hero />
         <div style={{
             marginTop: "100px",

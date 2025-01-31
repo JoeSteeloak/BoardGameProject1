@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Brädspelssamling - React och TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Denna webbapplikation är skapad med React och TypeScript för att visa upp min samling av brädspel. Webbplatsen är uppbyggd av flera komponenter och använder props för att skicka data till dessa. Det huvudsakliga målet med uppgiften var att förstå grundläggande koncept i React och skapa en enkel webbplats som är responsiv och innehåller dynamiskt genererade komponenter.
 
-Currently, two official plugins are available:
+## Funktioner
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Sidhuvud** med titel och banner. Titeln skickas som en prop till `Header`-komponenten.
+- **Huvudinnehåll** som innehåller en lista med brädspel. Varje spel representeras av ett objekt med egenskaper som titel, om det är ett kooperativt spel eller ej, och mitt personliga betyg på spelet. Listan renderas dynamiskt genom användning av `map`-funktionen..
+- **Responsiv design** för både desktop och mobila enheter.
 
-## Expanding the ESLint configuration
+## Teknologier
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: För att skapa komponenter och hantera användargränssnittet.
+- **TypeScript**: För att säkerställa typkontroll och bättre kodkvalitet.
+- **CSS**: För att designa och göra webbplatsen responsiv.
 
-- Configure the top-level `parserOptions` property like this:
+## Struktur
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Applikationen är uppdelad i flera komponenter:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **App.tsx**: Huvudkomponenten som renderar sidhuvudet, huvudsektionen och sidfoten.
+- **Header.tsx**: Komponent för sidhuvudet där titeln skickas som prop.
+- **Footer.tsx**: Komponent för sidfoten.
+- **Hero.tsx**: Komponent för banner.
+- **BoardGame.tsx**: Komponent som representerar ett brädspel i listan.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Klona repositoryt:
+   ```
+   git clone https://github.com/JoeSteeloak/BoardGameProject1.git
+   ```
+
+2. Installera beroenden:
+   ```
+   cd BoardGameProject1
+   npm install
+   ```
+
+3. Starta utvecklingsservern:
+   ```
+   npm run dev
+   ```
+
+4. Webbplatsen ska nu vara tillgänglig på [http://localhost:5173](http://localhost:5173).
+
+## Git och GitHub
+
+- Git och GitHub har använts för versionhantering under hela projektet. Regelbundna commits med beskrivande meddelanden har gjorts för att hålla koll på förändringar.
+- En `.gitignore`-fil är inkluderad för att exkludera filer som inte bör versionhanteras, såsom `node_modules`.
+
+## Publik Webbplats
+
+Webbplatsen har publicerats och är tillgänglig för testkörning på [https://******](https://******).
