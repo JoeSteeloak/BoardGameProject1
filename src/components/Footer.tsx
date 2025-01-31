@@ -1,6 +1,5 @@
-import './Hero.css'
 
-function Hero() {
+function Footer() {
 
     const firstname = "Jonas";
     return (
@@ -10,4 +9,4 @@ function Hero() {
 )
 }
 
-export default Hero;
+export default Footer;
