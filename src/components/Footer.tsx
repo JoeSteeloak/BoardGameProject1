@@ -1,12 +1,15 @@
 
 function Footer() {
 
-    const firstname = "Jonas";
+
     return (
-    <>
-        <h1 className="">Hello {firstname}</h1>
-    </>
-)
+        <>
+            <hr />
+            <footer>
+                <p>av Jonas Ståleker <br /> Kontakta mig via e-post: jost2306@student.miun.se</p>
+            </footer>
+        </>
+    )
 }
 
 export default Footer;

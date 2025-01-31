@@ -2,10 +2,10 @@ import './Hero.css'
 
 function Hero() {
 
-    const firstname = "Jonas";
+
     return (
     <>
-        <h1 className="">Hello {firstname}</h1>
+        <div className='hero-image'></div>
     </>
 )
 }

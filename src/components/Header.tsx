@@ -1,10 +1,10 @@
 
 function Header() {
 
-    const firstname = "Jonas";
+
     return (
     <>
-        <h1 className="">Hello {firstname}</h1>
+        <h1 className="">My Board Game Collection</h1>
     </>
 )
 }
