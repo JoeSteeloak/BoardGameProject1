@@ -51,4 +51,4 @@ Applikationen är uppdelad i flera komponenter:
 
 ## Publik Webbplats
 
-Webbplatsen har publicerats och är tillgänglig för testkörning på [https://******](https://******).
+Webbplatsen har publicerats och är tillgänglig för testkörning på [https://myboardgamecollection.netlify.app/](https://myboardgamecollection.netlify.app/).
